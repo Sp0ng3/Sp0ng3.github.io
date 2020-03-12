@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="���˽ӽ��ĸ�Сʱ���ڲ������Hexo……�������h�����ѶȲ��ߵ���ϸ�ںܶ࣬�м����״����ҷ������������������βŽ��(��Ѫ.jpg) ����hexo d���𱨴�(��������)�Ľ������ $ hexo dYou should configure deployment settings in _config.yml firs">
+<meta name="description" content="花了接近四个小时终于部署好了Hexo……总体来説部署难度不高但是细节很多，有几个易错点我反反复复操作了五六次才解决(吐血.jpg) 关于hexo d部署报错(配置问题)的解决方案 $ hexo dYou should configure deployment settings in _config.yml first! Available deployer plugins: For more he">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo��ĿӼ���������">
+<meta property="og:title" content="Hexo搭建的坑及常用命令">
 <meta property="og:url" content="https://sp0ng3.github.io/2020/03/12/%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85First%20Blood/index.html">
 <meta property="og:site_name" content="S0png3&#39;s Blog">
-<meta property="og:description" content="���˽ӽ��ĸ�Сʱ���ڲ������Hexo……�������h�����ѶȲ��ߵ���ϸ�ںܶ࣬�м����״����ҷ������������������βŽ��(��Ѫ.jpg) ����hexo d���𱨴�(��������)�Ľ������ $ hexo dYou should configure deployment settings in _config.yml firs">
+<meta property="og:description" content="花了接近四个小时终于部署好了Hexo……总体来説部署难度不高但是细节很多，有几个易错点我反反复复操作了五六次才解决(吐血.jpg) 关于hexo d部署报错(配置问题)的解决方案 $ hexo dYou should configure deployment settings in _config.yml first! Available deployer plugins: For more he">
 <meta property="article:published_time" content="2020-03-12T13:40:34.397Z">
-<meta property="article:modified_time" content="2020-03-12T16:47:40.756Z">
+<meta property="article:modified_time" content="2020-03-12T17:01:11.422Z">
 <meta property="article:author" content="Sp0ng3">
 <meta name="twitter:card" content="summary">
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>Hexo��ĿӼ��������� | S0png3's Blog</title>
+  <title>Hexo搭建的坑及常用命令 | S0png3's Blog</title>
   
 
 
@@ -258,7 +258,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo��ĿӼ���������</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo搭建的坑及常用命令</h1>
         
 
         <div class="post-meta">
@@ -319,22 +319,22 @@
       
 
       
-        <p>���˽ӽ��ĸ�Сʱ���ڲ������Hexo……�������h�����ѶȲ��ߵ���ϸ�ںܶ࣬�м����״����ҷ������������������βŽ��(��Ѫ.jpg)</p>
-<p>����hexo d���𱨴�(��������)�Ľ������</p>
+        <p>花了接近四个小时终于部署好了Hexo……总体来説部署难度不高但是细节很多，有几个易错点我反反复复操作了五六次才解决(吐血.jpg)</p>
+<p>关于hexo d部署报错(配置问题)的解决方案</p>
 <p>$ hexo d<br>You should configure deployment settings in _config.yml first!</p>
 <p>Available deployer plugins:</p>
 <p>For more help, you can check the online docs: <a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
-<p>���ϱ�����_config.yml��deploy�����Ƿ�������������<br>rules:������֮ǰ�����ո񣬲���ֵǰһ���ո���:�ָ�</p>
-<p>����hexo d�������(ģ��ȱʧ)�������</p>
+<p>如上报错在_config.yml中deploy设置是否首行缩进两格<br>rules:变量名之前两个空格，参数值前一个空格，用:分割</p>
+<p>关于hexo d部署错误(模块缺失)解决方案</p>
 <p>ERROR Deployer not found: git</p>
-<p>��������Ϊû��װhexo-deployer-git�������վ��Ŀ¼����������Ĳ����װ�ͺ���npm install hexo-deployer-git –save</p>
-<p>hexo�������ʮ����Ҫ��hexo clean</p>
-<p>$ hexo new “postName” #�½�����<br>$ hexo new page “pageName” #�½�ҳ��<br>$ hexo generate (����hexo g) ���ɾ�̬�ļ������ڵ�ǰĿ¼������һ���µĽ���public���ļ���<br>$ hexo server (����hexo s) ��������web�������ڲ��͵�Ԥ��<br>$ hexo deploy (����hexo d) ���𲥿͵�Զ�ˣ�����github, coding��ƽ̨��<br>���ü�д��</p>
+<p>如上是因为没安装hexo-deployer-git插件，在站点目录下输入下面的插件安装就好了npm install hexo-deployer-git –save</p>
+<p>hexo清除缓存十分重要：hexo clean</p>
+<p>$ hexo new “postName” #新建文章<br>$ hexo new page “pageName” #新建页面<br>$ hexo generate (或者hexo g) 生成静态文件，会在当前目录下生成一个新的叫做public的文件夹<br>$ hexo server (或者hexo s) 启动本地web服务，用于博客的预览<br>$ hexo deploy (或者hexo d) 部署播客到远端（比如github, coding等平台）<br>常用简写：</p>
 <p>$ hexo n == hexo new</p>
 <p>$ hexo g == hexo generate</p>
 <p>$ hexo s == hexo server</p>
 <p>$ hexo d == hexo deploy </p>
-<p>$ hexo clean #���<br>$ hexo g #����<br>$ hexo d #���� # ����hexo g�ϲ�Ϊ hexo d -g<br>$ hexo s -g #����Ԥ��</p>
+<p>$ hexo clean #清除<br>$ hexo g #生成<br>$ hexo d #部署 # 可与hexo g合并为 hexo d -g<br>$ hexo s -g #生成预览</p>
 
       
     </div>
@@ -419,7 +419,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sp0ng3</p>
-              <p class="site-description motion-element" itemprop="description">ʱ����������ˮ����һ�����ܻ��еġ�</p>
+              <p class="site-description motion-element" itemprop="description">时间就像海绵里的水，挤一挤，总会有的。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -622,7 +622,7 @@
         var disqus_config = function () {
           this.page.url = 'https://sp0ng3.github.io/2020/03/12/%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85First%20Blood/';
           this.page.identifier = '2020/03/12/博客安装First Blood/';
-          this.page.title = 'Hexo��ĿӼ���������';
+          this.page.title = 'Hexo搭建的坑及常用命令';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
