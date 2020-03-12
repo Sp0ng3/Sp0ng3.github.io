@@ -179,7 +179,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -199,7 +199,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -323,14 +323,17 @@
         
           
             <p>花了接近四个小时终于部署好了Hexo……总体来説部署难度不高但是细节很多，有几个易错点我反反复复操作了五六次才解决(吐血.jpg)</p>
-<p>关于hexo d部署报错(配置问题)的解决方案</p>
+<p>0x00<br>关于hexo d部署报错(配置问题)的解决方案</p>
 <p>$ hexo d<br>You should configure deployment settings in _config.yml first!</p>
 <p>Available deployer plugins:</p>
 <p>For more help, you can check the online docs: <a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
 <p>如上报错在_config.yml中deploy设置是否首行缩进两格<br>rules:变量名之前两个空格，参数值前一个空格，用:分割</p>
-<p>关于hexo d部署错误(模块缺失)解决方案</p>
+<p>0x01<br>关于hexo d部署错误(模块缺失)解决方案</p>
 <p>ERROR Deployer not found: git</p>
 <p>如上是因为没安装hexo-deployer-git插件，在站点目录下输入下面的插件安装就好了npm install hexo-deployer-git –save</p>
+<p>0x02</p>
+<p>搭建完成后乱码问题解决</p>
+<p>在source目录下新建一个.md文档并添加如下内容<br>:set encoding=utf-8<br>:set fileencodings=ucs-bom,utf-8,cp936<br>:set fileencoding=gb2312<br>:Set termencoding=utf-8</p>
 <p>hexo清除缓存十分重要：hexo clean</p>
 <p>$ hexo new “postName” #新建文章<br>$ hexo new page “pageName” #新建页面<br>$ hexo generate (或者hexo g) 生成静态文件，会在当前目录下生成一个新的叫做public的文件夹<br>$ hexo server (或者hexo s) 启动本地web服务，用于博客的预览<br>$ hexo deploy (或者hexo d) 部署播客到远端（比如github, coding等平台）<br>常用简写：</p>
 <p>$ hexo n == hexo new</p>
@@ -417,7 +420,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives/%7C%7C%20archive">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
