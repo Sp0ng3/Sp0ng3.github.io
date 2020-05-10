@@ -181,7 +181,7 @@ th {
 }
 ::selection {
   background: #262a30;
-  color: #fff;
+  color: #deb887;
 }
 body {
   position: relative;
@@ -277,7 +277,7 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #555;
+  color: #d23737;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
@@ -1114,7 +1114,7 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #fd5555;
+  color: #fff;
   background: #222;
   border-bottom: none;
 }
@@ -1134,11 +1134,12 @@ pre .javascript .function {
   font-size: 20px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #e24c4c;
 }
 .site-subtitle {
   margin-top: 10px;
   font-size: 13px;
-  color: #ddd;
+  color: #e8a6a6;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1192,6 +1193,7 @@ pre .javascript .function {
   text-align: center;
 }
 .menu .menu-item {
+  color: #d23737;
   display: inline-block;
   margin: 0 10px;
   list-style: none;
@@ -1291,6 +1293,7 @@ pre .javascript .function {
 @media (min-width: 992px) {
   .posts-expand .post-body {
     text-align: justify;
+    color: #264f53;
   }
 }
 .posts-expand .post-body h2,
@@ -1463,7 +1466,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #275b60;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1499,7 +1502,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999;
+  color: #275b60;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1833,7 +1836,7 @@ pre .javascript .function {
 .site-author-name {
   margin: 0;
   text-align: center;
-  color: #222;
+  color: #af2121;
   font-weight: 600;
 }
 .site-description {
@@ -2890,6 +2893,7 @@ pre .javascript .function {
 }
 .use-motion .sidebar .motion-element {
   opacity: 1;
+  color: #af2121;
 }
 .sidebar {
   margin-left: -100%;
@@ -3054,4 +3058,9 @@ body {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+sidebar p,
+sidebar span,
+sidebar a {
+  color: #d23737;
 }
